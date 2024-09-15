@@ -1,0 +1,83 @@
+.project{
+    width: calc(100vw-150px);
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.project-name{
+    margin: 0;
+}
+.project-items{
+    width: 80%;
+    min-width: 823px;
+    height: 80%;
+    background-color: var(--nav-background-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.project-item{
+    height: 47%;
+    flex-basis: 31%;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--text-color);
+    button{
+        background-color: var(--nav-background-color);
+        border-radius: 30px;
+        width: 100px;
+        height: 40px;
+        margin-top: 5%;
+        line-height: 40px;
+    }
+}
+.project-item img{
+    margin-top: 10%;
+    width: 60%;
+    height: 60%;
+}
+.detail-popup{
+    position: absolute;
+    background-color: var(--nav-background-color);
+    animation: popup 0.1s forwards;
+    width:50vw;
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 10px var(--text-color);
+    .close{
+        position: absolute;
+        font-size: 20px;
+        right: 30px;
+        top: 25px;
+        color: var(--text-color);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+@keyframes popup {
+    0%{
+        transform: scale(10%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}

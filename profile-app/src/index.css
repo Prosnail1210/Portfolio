@@ -1,0 +1,15 @@
+:root{
+    --background-color:rgb(19, 19, 19);
+    --nav-background-color: rgb(53, 53, 53);
+    --text-color:white;
+}
+[theme='light']{
+    --background-color:rgb(255, 255, 255);
+    --nav-background-color: rgb(231, 230, 230);
+    --text-color:rgb(0, 0, 0);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

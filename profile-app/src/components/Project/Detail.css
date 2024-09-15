@@ -1,0 +1,19 @@
+.detail {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: npwrap;
+    .title{
+        font-size: 64px;
+        margin: 20px 0;
+    }
+}
+.detail-line{
+    width: 80vw;
+    border: 1px solid var(--text-color);
+}

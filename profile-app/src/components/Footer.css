@@ -1,0 +1,16 @@
+.footer{
+    width: calc(100vw-150px);
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-name{
+    font-size: 64px;
+}
+.email,.cp{
+    font-size: 32px;
+}
