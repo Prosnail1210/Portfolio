@@ -7,13 +7,4 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    white-space: npwrap;
-    .title{
-        font-size: 64px;
-        margin: 20px 0;
-    }
-}
-.detail-line{
-    width: 80vw;
-    border: 1px solid var(--text-color);
 }

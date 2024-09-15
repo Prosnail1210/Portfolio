@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Project.css'
-import { db } from './ProjectDb'
 import { useNavigate } from 'react-router-dom'
+import { db } from '../ProjectDb'
 
 const Project = () => {
   const navigate = useNavigate()
-  const [id, setId] = useState()
+  const [id, setId] = useState(null)
   const [popup, setPopup] = useState(false)
+
   const handleDetailOn= (project_id)=>{
     setId(project_id)
     setPopup(true)
@@ -28,18 +29,18 @@ const Project = () => {
         }
       </div>
       {
-        popup===true?
+        popup===true&&(
           <div className='detail-popup'>
             <div className='close' onClick={()=>setPopup(false)}>X</div>
             <img src={db[id].src} alt='11'/>
             <div className='detail-title'>{db[id].title}</div>
-            <div className='detail-scription'>{db[id].description}</div>
+            <div className='detail-scription' dangerouslySetInnerHTML={{__html:(db[id].description)}}></div>
             <div>
               <button>사이트로 이동</button>
               <button onClick={()=>navigate(`/${db[id].title}`)}>설명으로 이동</button>
             </div>
           </div>
-          :null
+        )
       }
     </div>
   )

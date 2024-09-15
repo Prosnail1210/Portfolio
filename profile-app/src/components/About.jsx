@@ -37,15 +37,15 @@ const About = () => {
             <div className='skill'>
                 <h2 className='skill-title'>SKILL</h2>
                 <div className='skill-image-section'>
-                    <img className='skill-image' src='images/html5.png' alt='html5' title='html5'/>
-                    <img className='skill-image' src='images/css3.png' alt='css3' title='css3'/>
-                    <img className='skill-image' src='images/js.png' alt='javascript' title='javascript'/>
-                    <img className='skill-image' src='images/typescript.png' alt='typescript' title='typescript'/>
-                    <img className='skill-image' src='images/react.png' alt='react' title='react'/>
-                    <img className='skill-image' src='images/redux.png' alt='redux' title='redux'/>
-                    <img className='skill-image' src='images/nextjs.png' alt='nextjs' title='next.js'/>
-                    <img className='skill-image' src='images/fb.png' alt='firebase' title='firebase'/>
-                    <img className='skill-image' src='images/git.png' alt='git' title='git'/>
+                    <img className='skill-image' src='images/about/html5.png' alt='html5' title='html5'/>
+                    <img className='skill-image' src='images/about/css3.png' alt='css3' title='css3'/>
+                    <img className='skill-image' src='images/about/js.png' alt='javascript' title='javascript'/>
+                    <img className='skill-image' src='images/about/typescript.png' alt='typescript' title='typescript'/>
+                    <img className='skill-image' src='images/about/react.png' alt='react' title='react'/>
+                    <img className='skill-image' src='images/about/redux.png' alt='redux' title='redux'/>
+                    <img className='skill-image' src='images/about/nextjs.png' alt='nextjs' title='next.js'/>
+                    <img className='skill-image' src='images/about/fb.png' alt='firebase' title='firebase'/>
+                    <img className='skill-image' src='images/about/git.png' alt='git' title='git'/>
                     <img className='skill-image' src='images/github.png' alt='github' style={{backgroundColor:'white'}}  title='github'/>
                 </div>
             </div>
